@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="filter.css" />
+<body>
+	<span>
+
+		<div>
+			<img style="margin-right:30px;vertical-align:middle;margin-top:30px" title="CEVA Animal Health" src="logos/nato.png"><a></a>
+
+		</div>
+		<h1>The 28 NATO countries</h1>
+		</br>
+		
+		<p>This cartography features the 28 nato members spatialized using geojson locations, with contextual figures on hovering.</br></br>
+		</br>
+		<strong>Legend :</strong>
+		<ul>
+			<li>Size of the node is correlated to the country's population.</li></br>
+			<li>Color of the node is correlated to the country's opening rate for migrants : scaling from yellow (weak) to black (extensive).</li>
+		</ul>
+		</p></br>
+
+		<h2>Thanking Adam Pearce (MiT) for his meteor map.</h2>
+
+		<span id="instructions">
+			Hover the nodes for more information
+		</span>
+	</span>
+
+	<div id="charts">
+		<div id="map" class="display"></div>
+	</div>
+
+
+	 	
+</body>
+
+<script src="lib/d3.js"></script>
+<script src="lib/topojson.js"></script>
+<script src="lib/queue.js"></script>
+<script src="lib/crossfilter.js"></script>
+<script src="drawMap.js"></script>
+<script src="barChart.js"></script>
+
+
+</html>
